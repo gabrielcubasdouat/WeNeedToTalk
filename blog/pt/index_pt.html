@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Português</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../txtstyle.css">
+</head>
+<body>
+
+	<h1>Textos</h1>
+	<a id="portais">Caçadores de portais</a>
+	<a id="medo">Medo</a>
+	<a id="fruto">Deserto & Fruto</a>
+	<a id="deus">Todo homem é igual</a>
+	
+	<script type="text/javascript">
+		document.getElementById("portais").onclick = function() {goToText("portais.html")};
+		document.getElementById("medo").onclick = function() {goToText("medo.html")};
+		document.getElementById("fruto").onclick = function() {goToText("fruto.html")};
+		document.getElementById("deus").onclick = function() {goToText("deus.html")};
+		function goToText(textId) {
+  			window.location.replace(textId);
+		}
+		function returnHome() {
+			window.location.replace('../index.html');
+		}
+	</script>
+	<button onclick="returnHome()">Return Home</button>
+
+</body>
+</html>

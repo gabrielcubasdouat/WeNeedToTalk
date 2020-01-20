@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../txtstyle.css">
+	<title>Español</title>
+</head>
+<body>
+
+	<h1>El futuro te deprime</h1>
+	<a id="intro">Intro</a>
+	<a id="porque">¿Por qué temes el futuro?</a>
+	<a id="troya">Troya social</a>
+
+	<script type="text/javascript">
+		document.getElementById("intro").onclick = function() {goToText("intro.html")};
+		document.getElementById("porque").onclick = function() {goToText("porque.html")};
+		document.getElementById("troya").onclick = function() {goToText("troya.html")};
+		function goToText(textId) {
+  			window.location.replace(textId);
+		}
+		function returnHome() {
+			window.location.replace('../index.html');
+		}
+	</script>
+	<button onclick="returnHome()">Return Home</button>
+
+</body>
+</html>
