@@ -23,6 +23,8 @@ button{
   align-self: center;
 }
 
+div {color: black;}
+
 p, a{
  margin: 10px;
  text-align: justify;
