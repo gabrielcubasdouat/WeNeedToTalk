@@ -7,11 +7,14 @@
 </head>
 <body>
 
-	<h1>La realidad virtual en que vivimos</h1>
-	<a id="intro">Intro</a>
-	<a id="porque">¿Por qué temes el futuro?</a>
-	<a id="troya">Troya social</a>
-
+	<div style="display: flex; flex-direction: column;">
+		<h1>La realidad virtual en que vivimos</h1>
+		<a id="intro">Intro</a>
+		<a id="porque">¿Por qué temes el futuro?</a>
+		<a id="troya">Troya social</a>
+		<button onclick="returnHome()">Return Home</button>
+	</div>
+	
 	<script type="text/javascript">
 		document.getElementById("intro").onclick = function() {goToText("intro.html")};
 		document.getElementById("porque").onclick = function() {goToText("porque.html")};
@@ -23,7 +26,6 @@
 			window.location.replace('../index.html');
 		}
 	</script>
-	<button onclick="returnHome()">Return Home</button>
 
 </body>
 </html>
