@@ -1,81 +1,91 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-html, body {
- font-family: 'Montserrat', sans-serif, bold;
- font-weight: 100;
- font-size: 20px;
+body {
+ margin:0;
+ padding:0;
  display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 50vh;
+ font-family: 'Poppins',  sans-serif;
  flex-direction: column;
- background-color: #c9c9c9;
- color: black;
+ background-color: #e8e2d3;
+}
+
+/* main text */
+div {
+  padding: 1vw;
 
 }
 
-#buttons-section{
-  align-self: center;
-}
-
-button{
-  background-color: grey;
+p {
   margin-bottom: 10px;
-  margin-top: 20px;
-  width: 400px;
-  color: black;
-  font-weight: bold;
-  align-self: center;
-}
-
-p{
- font-size: 30px;
- margin: 10px;
- text-align: justify;
- align-self: center;
- font-size: 15px;
-}
-
-a{
-  text-align: center;
-  color: black;
-  margin: 10px;
-  cursor:crosshair;
-}
-
-div{
-  align-self: center;
-  margin: 30px;
-  text-align: justify;
-}
-
-h1,ul{
- font-weight: bold;
- text-align: center;
+  padding:0 15vw 0 15vw;
+  font-size: 2vw;
+  cursor:ew-resize;
+  color: #141921;
 }
 
 #main_text{
-  color: black;
-  flex-wrap: wrap;
+  text-align: justify;
+
+}
+
+h1{
+  margin: 2vw;
+  padding:0;
+  text-align: center;
+  font-size: 6vw;
+  cursor: none;
+  font-family: 'Montserrat', medium;
+  color: #141921;
 }
 
 /* button */
-
-div.language{
+.language{
   width: 200px;
+  height: 30px;
   justify-content: center;
   text-align: center;
   display: flex;
   opacity: 0.8;
-  margin: 5px;
+  cursor: crosshair;
+}
+span.button_language{
+  margin: 0vw 3.7vw 0vw 3.7vw;
+  padding: 1vw 4vw 1vw 4vw;
+  font-size: 2vw;
+  cursor: pointer;
 }
 
-#PT{
-  background-color: rgb(132, 178, 143);
+a{
+  color: #31363b;
+  font-family: 'Montserrat', medium;
+}
+#PT{background-color: rgb(132, 178, 143);}
+#ES{background-color: rgb(238, 236, 123);}
+#EN{background-color: rgb(178, 132, 132);}
+
+/* Text selection */
+
+.text_selection{
+  font-size: 2vw;
+  cursor:pointer;
 }
 
-#ES{
-  background-color: rgb(238, 236, 123);
+li {
+ list-style: none;
+ cursor:pointer;
+ margin-bottom: 2vw;
+ font-size: 2vw;
+  font-family: 'Montserrat', medium;
+
 }
 
-#EN{
-  background-color: rgb(178, 132, 132);
+button{
+  background-color: #42413e;
+  font-size: 3vw;
+  font-family: 'Montserrat', light;
+  color: #e8e2d3;
 }

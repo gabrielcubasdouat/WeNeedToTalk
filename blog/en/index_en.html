@@ -15,23 +15,19 @@
 	<link rel="stylesheet" type="text/css" href="../txtstyle.css">
 </head>
 <body>
-
-<div style="display: flex; flex-direction: column;">
 	<h1>Texts</h1>
-	<a id="dragon">The Dragon and the Manatee</a>
-	<a id="oss">OSS</a>
-</div>
+	<li id="dragon">The Dragon and the Manatee</li>
+	<li id="oss">OSS</li>	
 	<script type="text/javascript">
 		document.getElementById("dragon").onclick = function() {goToText("dragon.html")};
 		document.getElementById("oss").onclick = function() {goToText("oss.html")};
 		function goToText(textId) {
-  			window.location.replace(textId);
+	  		window.location.replace(textId);
 		}
 		function returnHome() {
 			window.location.replace('../index.html');
 		}
 	</script>
 	<button onclick="returnHome()">Return Home</button>
-
 </body>
 </html>
